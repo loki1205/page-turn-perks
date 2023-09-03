@@ -1,0 +1,120 @@
+.tiles{
+    background-color: #0e2a47;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: white;
+    padding: 15px 20px;
+    min-height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.tiles:first-of-type{
+    margin-top: 20px;
+}
+
+.btn-day-save{
+    background-color: #2bc48a;
+    border: none;
+    color: rgb(2, 2, 2);
+    padding: 7px 15px !important;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.btn-dialog{
+    padding: 10px 25px;
+    background-color: #2bc48a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dialog-box{
+    width: 350px;
+    background-color: white;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 1px 1px 100px rgba(122, 122, 122, 0.447);
+}
+
+.dialog-title{
+    background-color: #2bc48a;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.dialog-content{
+    padding: 25px;
+    text-align: center;
+}
+
+.dialog-title > p{
+    margin: 0;
+}
+
+.dialog-content > p{
+    margin: 0;
+}
+
+.dialog-actions{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+.disabled-button{
+    background-color: gray;
+    border: none;
+    color: rgb(2, 2, 2);
+    padding: 7px 15px !important;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.not-found-message{
+    text-align: center;
+    color: white;
+}
+
+.not-found-message-gift{
+    text-align: center;
+    color: red;
+    margin: 10px;
+}
+
+.golden-tiles{
+    background-color: #f69110;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: white;
+    padding: 15px 20px;
+    min-height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.golden-tiles > p {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+@media only screen and (max-width:320px) {
+    .dialog-box{
+        width: 280px;
+    }
+
+    .tiles{
+        padding:10px 20px
+    }
+
+}

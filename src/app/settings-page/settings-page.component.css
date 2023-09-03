@@ -1,0 +1,141 @@
+.tiles{
+    background-color: #0e2a47;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    color: white;
+    padding: 0 20px;
+    min-height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.tiles-gifts{
+    background-color: #0e2a47;
+    margin-top: 20px;
+    color: white;
+    padding: 0 20px;
+    min-height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.input-box{
+    margin-left: 10px;
+    position: relative;
+    width: 100px;
+}
+
+.para{
+    line-height: 30px;
+}
+
+.para-2{
+    padding: 15px;
+    text-align: center;
+}
+
+.btn-day-save{
+    background-color: #2bc48a;
+    border: none;
+    color: rgb(2, 2, 2);
+    padding: 7px 15px !important;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-day-remove{
+    background-color: #2bc48a;
+    border: none;
+    color: rgb(2, 2, 2);
+    padding: 7px 15px !important;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.btn-day-save-2{
+    background-color: #2bc48a;
+    border: none;
+    color: rgb(2, 2, 2);
+    padding: 10px 15px !important;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin:20px 10px 10px 10px;
+}
+
+.container{
+    height: 100%;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tile{
+    background-color: #0e2a47;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    padding: 0 20px;
+    min-height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.btn-dialog{
+    padding: 10px 25px;
+    background-color: #2bc48a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dialog-box{
+    width: 350px;
+    background-color: white;
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 1px 1px 100px rgba(122, 122, 122, 0.447);
+}
+
+.dialog-title{
+    background-color: #2bc48a;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.dialog-content{
+    padding: 25px;
+    text-align: center;
+}
+
+.dialog-title > p{
+    margin: 0;
+}
+
+.dialog-content > p{
+    margin: 0;
+}
+
+.dialog-actions{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}

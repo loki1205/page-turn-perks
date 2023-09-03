@@ -1,0 +1,37 @@
+<section class="container">
+    <div class="tiles">
+        <p class="para">The number of days for the challenge is: 
+        </p>
+        <kendo-numerictextbox
+                class="input-box" format="##" [min]="0" [step]="1"
+                    [(value)]="totalCount"
+                  >
+        </kendo-numerictextbox>
+        <button (click)="saveChanges()" class="btn-day-save-2" kendoButton>Save Changes</button>
+    </div>
+    <div class="tile">
+        <button (click)="open()" class="btn-day-save" kendoButton>Add a perk</button>
+        <button (click)="viewGifts()" class="btn-day-save" kendoButton>View all perks</button>
+        <button (click)="resetData()" class="btn-day-save" kendoButton>Reset Data</button>
+    </div>
+    <div *ngIf="showGifts" class="tiles-gifts">
+        <p class="para-2" *ngIf="!gifts.length">No Data Found</p>
+        <ul *ngIf="gifts.length">
+            <li *ngFor="let items of gifts">{{items}}
+                <button (click)="deleteGift(items)" class="btn-day-remove" kendoButton>Remove</button>
+            </li>
+        </ul>
+    </div>
+</section>
+<div *ngIf="opened" class="dialog-box">
+    <div class="dialog-title">
+    <p>Add a perk</p>
+    </div>
+    <div class="dialog-content">
+        <kendo-textbox [(value)]="giftNew" placeholder="Enter your new gift"></kendo-textbox>
+    </div>
+    <div class="dialog-actions">
+    <button (click)="closeYes(giftNew)" class="btn-dialog" kendoButton>Yes</button>
+    <button (click)="closeNo()" class="btn-dialog" kendoButton>No</button>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<nav class="navbar-mobile">
+    <img (click)="toggleSidenav()" class="menu-icon" src="../assets/menu.png" alt="menuIcon">
+    <span class="title-nav">Days to go: <span class="count-nav">{{currentCount}} days</span></span>
+</nav>
+<section #navExpanded class="nav-container">
+    <ul class="sidenav-list">
+        <li><a (click)="linkClicked($event)" routerLinkActive="active-link" routerLink="/app">Home</a></li>
+        <li><a (click)="linkClicked($event)" routerLinkActive="active-link" routerLink="/settings">Settings</a></li>
+        <li><a (click)="linkClicked($event)" routerLinkActive="active-link" routerLink="/about">About</a></li>
+        <li><a (click)="linkClicked($event)" routerLinkActive="active-link" routerLink="/help">Help</a></li>
+      </ul>
+</section>

@@ -1,0 +1,48 @@
+<p *ngIf="totalCount==0" class="not-found-message">Please check settings page to start the challenge!</p>
+<p *ngIf="chosenGift==undefined || chosenGift==null || chosenGift==''" class="not-found-message-gift">No gifts are added, be sure to add some gifts in settings page to use effectively!</p>
+<section class="container">
+    <div class="tiles" *ngFor="let _ of [].constructor(totalCount);let i=index">
+      <span>Day - {{i+1}}</span>
+      <button *ngIf="!alreadyMarked.includes(i+1)" [disabled]="false" (click)="open($event,i)" class="btn-day-save" kendoButton>Mark</button>
+      <button *ngIf="alreadyMarked.includes(i+1)" [disabled]="true" class="disabled-button" kendoButton>Done</button>
+    </div>
+    <div (click)="enterGoldMode()" class="noSelect golden-tiles">
+      <p class="noSelect">See your prize!!!</p>
+    </div>
+</section>
+<div *ngIf="opened" class="dialog-box" [@slideFromTop]="opened">
+  <div *ngIf="goldMode && tasksCompleted">
+    <div class="dialog-title">
+      <p>Get your prize</p>
+    </div>
+    <div class="dialog-content">
+      <p>Ready for your surpise? Your gift is: <strong>{{chosenGift}}</strong></p>
+    </div>
+    <div class="dialog-actions">
+      <button (click)="closeNo()" class="btn-dialog" kendoButton>I am happy</button>
+    </div>
+  </div>
+  <div *ngIf="goldMode && !tasksCompleted">
+    <div class="dialog-title">
+      <p>Want to know your prize?</p>
+    </div>
+    <div class="dialog-content">
+      <p>Please complete the challenge to get something special.</p>
+    </div>
+    <div class="dialog-actions">
+      <button (click)="closeNo()" class="btn-dialog" kendoButton>Sure</button>
+    </div>
+  </div>
+  <div *ngIf="!goldMode">
+    <div class="dialog-title">
+      <p>Lie Detector</p>
+    </div>
+    <div class="dialog-content">
+      <p>Are you sure? Did you really read today?</p>
+    </div>
+    <div class="dialog-actions">
+      <button (click)="closeYes()" class="btn-dialog" kendoButton>Yes</button>
+      <button (click)="closeNo()" class="btn-dialog" kendoButton>No</button>
+    </div>
+  </div>
+</div>
