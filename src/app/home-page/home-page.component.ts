@@ -40,11 +40,11 @@ export class HomePageComponent {
     if(this.lastUpdated!==null && this.lastUpdated!==0)
     {
       this.timeDifference = this.currentTime - this.lastUpdated;
-      console.log(this.timeDifference)
-      if(this.timeDifference>104401000){
-      console.log(this.timeDifference)
-      localStorage.removeItem('alreadyMarked')
-      this.alreadyMarked = [0]
+      if(this.timeDifference>60000)
+      {
+        localStorage.removeItem('alreadyMarked')
+        this.alreadyMarked = [0]
+        this._sharedService.updateCurrentData(this.totalCount);
     }
     }
   }

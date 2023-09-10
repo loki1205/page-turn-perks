@@ -33,6 +33,11 @@
     line-height: 30px;
 }
 
+.information{
+    color: red;
+    text-align: center;
+}
+
 .para-2{
     padding: 15px;
     text-align: center;

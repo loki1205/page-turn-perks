@@ -1,0 +1,20 @@
+.para{
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+
+.social-icon{
+    width: 20px;
+}
+
+.social-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-link > a{
+    margin-left: 10px;
+    color: #f69110;
+}
