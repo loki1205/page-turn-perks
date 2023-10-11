@@ -38,6 +38,7 @@
     width: 350px;
     background-color: white;
     position: fixed;
+    bottom: 50px;
     border-radius: 5px;
     box-shadow: 1px 1px 100px rgba(122, 122, 122, 0.447);
 }
